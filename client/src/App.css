@@ -1,0 +1,100 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  color: #222;
+}
+main{
+  max-width: 60vw;
+  margin:0 auto;
+  padding: 10px;
+}
+header{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  
+}
+header a{
+  text-decoration: none;
+  color: inherit;
+}
+header a.logo{
+  font-weight:bold;
+  font-size: 1.6rem;
+  font-family: "Times New Roman", Times, serif;
+}
+header nav{
+  display:flex;
+  gap:15px;
+}
+
+div.post{
+  display:grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 20px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  box-shadow:  5px 10px 10px #888888;
+  padding: 10px;
+  border-radius: 5px;
+}
+div.post img{
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+form.login,form.register{
+  max-width: 60%;
+  margin: 0 auto;
+}
+form.login input, form.register input{
+  display:block;
+  width: 100%;
+  margin-bottom: 5px;
+  border: 2px solid #ddd;
+  padding: 10px 7px;
+  border-radius: 25px;
+}
+form button {
+  width: 100%;
+  color: white;
+  background-color: black;
+  padding: 10px 0;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  margin: 10px 0;
+  cursor: pointer;
+}
+form button:active{
+  scale:0.9;
+}
+.postInfo{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
+.author{
+  font-weight: bold;
+}
+form.create-post input{
+  display: block;
+  margin: 10px 0;
+  border: 1px solid black;
+  width: 100%;
+}
+form.create-post .title, form.create-post .summary{
+  padding: 5px 5px;
+}
+.post-page-header{
+  text-align: center;
+}
+.post-page .image{
+  max-height: 200px;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
