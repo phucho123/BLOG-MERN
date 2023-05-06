@@ -13,7 +13,7 @@ const uploadMiddleware = multer({ dest: 'uploads/' });
 const fs=require('fs');
 
 
-const URI = 'mongodb+srv://admin:aG7il18EIjPXxfBC@cluster0.riopvgx.mongodb.net/BlogDatabase?retryWrites=true&w=majority';
+const URI = process.env.DATA_BASE_URL;
 const salt = bcrypt.genSaltSync(10);
 const secret = "fkjlagfhdso32483fdksjf";
 
