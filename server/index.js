@@ -75,10 +75,11 @@ app.post('/logout',(req,res) => {
 app.post('/post',uploadMiddleware.single('file'),(req,res) => {
   const { token } = req.cookies;
   const { title,summary, content } = req.body;
+  let newPath = null;
   if(req.file){
     const {originalname,path} = req.file;
     const ext = originalname.split('.').at(-1);
-    const newPath = path + '.' + ext;
+    newPath = path + '.' + ext;
     fs.renameSync(path,newPath);
   }
   if(token){
