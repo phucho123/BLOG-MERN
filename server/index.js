@@ -1,4 +1,3 @@
-//aG7il18EIjPXxfBC
 //mongodb+srv://admin:<password>@cluster0.riopvgx.mongodb.net/?retryWrites=true&w=majority
 const express = require('express');
 const mongoose = require('mongoose');
